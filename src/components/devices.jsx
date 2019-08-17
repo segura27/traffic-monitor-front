@@ -9,7 +9,7 @@ class Devices extends Component {
   };
 
   componentDidMount() {
-    axios.get("http://localhost:3001/devices/").then(res => {
+    axios.get("http://traffic-back-end.herokuapp.com/devices/").then(res => {
       console.log("****OUTPUT****", res);
       this.setState({ devices: res.data });
     });

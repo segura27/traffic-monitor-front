@@ -9,7 +9,7 @@ class Gates extends Component {
   };
 
   componentDidMount() {
-    axios.get("http://localhost:3001/gates/").then(res => {
+    axios.get("http://traffic-back-end.herokuapp.com/gates/").then(res => {
       console.log("****OUTPUT****", res);
       this.setState({ gates: res.data });
     });
